@@ -76,12 +76,12 @@ function chooseCard(event) {
   getCountries(card);
   inputEl.value = '';
 }
+
+// dark-theme
 const btn = document.querySelector(".btn-toggle");
-// Проверяем предпочтение тёмного режима на уровне ОС
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-
 const currentTheme = localStorage.getItem("theme");
+
 if (currentTheme == "dark") {
     document.body.classList.toggle("dark-mode");
   } else if (currentTheme == "light") {
