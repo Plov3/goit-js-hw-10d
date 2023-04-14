@@ -11,6 +11,20 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+body.dark-mode {
+  background-color: #212121;
+  color: #fafafa;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #212121;
+      color: #fafafa;
+  }
+  body.light-mode {
+    background-color: #fafafa;
+      color: #212121;
+  }
+}
 
 #search-box {
   font: inherit;
